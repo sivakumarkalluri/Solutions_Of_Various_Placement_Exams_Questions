@@ -1,9 +1,13 @@
-array=[1,2,3,4,5,6]
-shift=1
+size=int(input())
+array=list(map(int,input().split()))
+shift=int(input())
 l=[]
+if shift>size:
+    shift=shift-size
 for i in range(shift,0,-1):
     l.append(array[-i])
 for i in array[:len(array)-shift]:
     l.append(i)
-print(l)
+for i in l:
+    print(i,end=" ")
 
