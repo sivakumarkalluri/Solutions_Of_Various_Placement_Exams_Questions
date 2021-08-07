@@ -7,4 +7,5 @@ for i in array[shift:]:
     l.append(i)
 for i in array[:shift]:
     l.append(i)
-print(l)
+for i in l:
+    print(i,end=" ")
