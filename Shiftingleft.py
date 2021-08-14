@@ -1,4 +1,5 @@
 array=list(map(int,input().split()))
+<<<<<<< HEAD
 l=[0]
 for i in range(len(array)-1):
     result=True
@@ -19,3 +20,15 @@ for i in range(len(array)-1):
                 break
 print(max(l))
 
+=======
+shift=int(input())
+l=[]
+if shift>size:
+    shift=shift-size
+for i in array[shift:]:
+    l.append(i)
+for i in array[:shift]:
+    l.append(i)
+for i in l:
+    print(i,end=" ")
+>>>>>>> bfe60d88b340e65d9eef7789eedc86c3e462b38f
