@@ -1,3 +1,5 @@
+# >>>>>>>>>>>>>>>> Sorting the dictionary based on keys <<<<<<<<<<<<<<<<<<<<<<<
+
 dictionary={'hai':5,'program':9,'pink':67,'collection':4,'by':8,'class':6}
 res=[]
 for i in dictionary:
