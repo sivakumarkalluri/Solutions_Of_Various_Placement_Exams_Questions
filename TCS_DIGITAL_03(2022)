@@ -1,0 +1,29 @@
+
+N=int(input())
+B1=[]
+B2=[]
+temp=N
+count=0
+f1=0
+f2=0
+while True:
+    if count%2==0 or count==0:
+        if (3**count)<temp:
+            B1.append(3**count)
+            temp=temp-(3**count)
+            count+=1
+        else:
+            f1=1
+            count+=1
+    else:
+        if (4**count)<temp:
+            B2.append(4**count)
+            temp=temp-(4**count)
+            count+=1
+        else:
+            f2=1
+            count+=1
+    if f1==1 and f2==1:
+        break
+print(sum(B1),sum(B2))
+    
