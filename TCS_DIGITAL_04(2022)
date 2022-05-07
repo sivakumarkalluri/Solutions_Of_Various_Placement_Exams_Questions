@@ -1,0 +1,11 @@
+value=input()
+total=0
+for i in value:
+    if i.isdigit():
+        total+=int(i)
+    else:
+        num=str(ord(i))
+        arr=[int(x) for x in num]
+        total+=max(arr)
+print(total)
+        
