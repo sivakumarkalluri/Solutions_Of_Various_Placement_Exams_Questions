@@ -1,0 +1,17 @@
+
+N=int(input())
+L=int(input())
+array=[]
+for i in range(N):
+    array.append(int(input()))
+result=[]
+array=sorted(array)
+for i in range(N):
+    if array[i]==L:
+        result.append(i)
+if len(result)!=0:
+    print(result[0])
+else:
+    print(N-1)
+        
+    
